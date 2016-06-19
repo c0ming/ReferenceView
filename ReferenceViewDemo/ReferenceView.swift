@@ -14,7 +14,17 @@ class ReferenceView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+
+        setup()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
+        setup()
+    }
+    
+    func setup() {
         Bundle.main().loadNibNamed("\(self.dynamicType)", owner: self, options: nil)
         
         guard let contentView = contentView else {

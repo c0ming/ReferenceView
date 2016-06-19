@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         customView.titleLabel.text = "balabalabala..."
+        
+        let customView2 = CustomView(frame: CGRect(x: 10, y: 210, width: 300, height: 100))
+        view.addSubview(customView2)
+        customView2.titleLabel.text = "233"
     }
 
     override func didReceiveMemoryWarning() {
