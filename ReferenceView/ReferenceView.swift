@@ -14,11 +14,21 @@ class ReferenceView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+
+        setup()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
+        setup()
+    }
+    
+    func setup() {
         Bundle.main().loadNibNamed("\(self.dynamicType)", owner: self, options: nil)
         
         guard let contentView = contentView else {
-            fatalError("Should set the contentView's outlet in Interface Builder.")
+            fatalError("You must set the contentView's outlet in Interface Builder first!")
         }
         addSubview(contentView)
     }
