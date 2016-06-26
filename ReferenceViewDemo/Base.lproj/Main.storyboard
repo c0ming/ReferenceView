@@ -27,7 +27,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tso-Zd-xdo" customClass="CustomView2" customModule="ReferenceViewDemo" customModuleProvider="target">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="9Fm-HY-dNn"/>
+                                    <constraint firstAttribute="height" constant="120" id="9Fm-HY-dNn"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -9,7 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView2" customModule="ReferenceViewDemo" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="o7K-t1-0iz"/>
-                <outlet property="customView" destination="pkY-tk-g4o" id="XAO-1d-qhC"/>
+                <outlet property="customView" destination="pkY-tk-g4o" id="XwZ-pi-kMn"/>
                 <outlet property="progressView" destination="cPm-aW-Q5J" id="31U-xj-OUu"/>
             </connections>
         </placeholder>
@@ -26,7 +26,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="pkY-tk-g4o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="9l7-vr-qJQ"/>
                 <constraint firstItem="pkY-tk-g4o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ChE-a5-mKN"/>

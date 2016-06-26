@@ -28,7 +28,7 @@ class ReferenceView: UIView {
         Bundle.main().loadNibNamed("\(self.dynamicType)", owner: self, options: nil)
         
         guard let contentView = contentView else {
-            fatalError("Should set the contentView's outlet in Interface Builder.")
+            fatalError("You must set the contentView's outlet in Interface Builder first!")
         }
         addSubview(contentView)
     }
