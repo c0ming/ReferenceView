@@ -2,7 +2,7 @@
 
 <img src="./Images/0@2x.png" width="320">
 
-**1.** Make your custom view extents ReferenceView.
+**1.** Make your custom view extents form ReferenceView.
 
 <img src="./Images/1@2x.png" width="320">
 
