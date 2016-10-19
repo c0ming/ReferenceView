@@ -14,23 +14,34 @@ class ReferenceView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-
-        setup()
+        
+        unarchiveContentView()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setup()
+        unarchiveContentView()
+        setupReferenceView()
     }
     
-    func setup() {
-        Bundle.main().loadNibNamed("\(self.dynamicType)", owner: self, options: nil)
+    final override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setupReferenceView()
+    }
+    
+    final func unarchiveContentView() {
+        Bundle.main.loadNibNamed("\(type(of: self))", owner: self, options: nil)
         
         guard let contentView = contentView else {
             fatalError("You must set the contentView's outlet in Interface Builder first!")
         }
         addSubview(contentView)
+    }
+    
+    func setupReferenceView() {
+        // extra setup
     }
     
     override func layoutSubviews() {
